@@ -42,30 +42,22 @@ namespace CalculatorLabb7.Modules {
                     case 1:
                         //Save the input to the (double num1, double num2)
                         numInput = UserInput.Input();
-                        Console.WriteLine(
-                            "result : " + CalculatorFunctions.Add(numInput.num1, numInput.num2)
-                        );
+                        Console.WriteLine("result : " + CalculatorFunctions.Add(numInput.num1, numInput.num2));
                         SystemFunctions.PressEnter();
                         break;
                     case 2:
                         numInput = UserInput.Input();
-                        Console.WriteLine(
-                            "result : " + CalculatorFunctions.Subtract(numInput.num1, numInput.num2)
-                        );
+                        Console.WriteLine("result : " + CalculatorFunctions.Subtract(numInput.num1, numInput.num2));
                         SystemFunctions.PressEnter();
                         break;
                     case 3:
                         numInput = UserInput.Input();
-                        Console.WriteLine(
-                            "result : " + CalculatorFunctions.Multiply(numInput.num1, numInput.num2)
-                        );
+                        Console.WriteLine("result : " + CalculatorFunctions.Multiply(numInput.num1, numInput.num2));
                         SystemFunctions.PressEnter();
                         break;
                     case 4:
                         numInput = UserInput.Input();
-                        Console.WriteLine(
-                            "result : " + CalculatorFunctions.Divide(numInput.num1, numInput.num2)
-                        );
+                        Console.WriteLine("result : " + CalculatorFunctions.Divide(numInput.num1, numInput.num2));
                         SystemFunctions.PressEnter();
                         break;
                     case 5:

@@ -10,21 +10,28 @@ namespace CalculatorLabb7.Modules {
 
         public static (double num1, double num2) Input() {
 
+            double num1;
+            double num2;
+
             while (true) {
 
                 Console.WriteLine("Number 1:");
-                double num1;
-                if (!double.TryParse(Console.ReadLine(), out num1))
+                if (!double.TryParse(Console.ReadLine(), out num1)) {
                     Console.WriteLine("\nNot a valid input...");
-
+                    //Incase the user inputs an non-valid input, redo this while loop
+                    continue;
+                }
+                   
                 Console.WriteLine("Number 2:");
-                double num2;
-                if (!double.TryParse(Console.ReadLine(), out num2))
+                if (!double.TryParse(Console.ReadLine(), out num2)) {
                     Console.WriteLine("\nNot a valid input...");
+                    continue;
+                }
 
-                return (num1, num2);
-
+                break;
             }
+
+            return (num1, num2);
 
         }
 
