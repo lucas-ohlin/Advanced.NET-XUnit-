@@ -26,8 +26,16 @@ namespace CalculatorLabb7.Modules {
         }
 
         public static double Divide(double x, double y) {
-            sysFuncs.LogCalcutlator(x, y, '/', Math.Round(x / y, 2));
-            return Math.Round(x / y, 2);
+
+            //Incase of zero exception
+            if (y == 0) {
+                Console.WriteLine("Error : Divide by zero...");
+                return 0;
+            } else {
+                sysFuncs.LogCalcutlator(x, y, '/', Math.Round(x / y, 2));
+                return Math.Round(x / y, 2);
+            }
+
         }
 
     }
